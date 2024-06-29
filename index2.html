@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Ten Cards in a Row</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+      .card-custom {
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        height: 400px;
+        background-color: white;
+        transition: 400ms;
+      }
+      .card-custom:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.925);
+        filter: grayscale(1);
+        transform: scale(1.03);
+      }
+      .card-custom h2 {
+        margin: 0 0 10px;
+        font-size: 28px;
+        padding-top: 60px;
+      }
+      .card-custom p {
+        color: black;
+        font-size: 20px;
+      }
+      .second {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+      }
+      .second img {
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+      }
+      .text-first {
+        display: flex;
+        flex-direction: column;
+      }
+      .text-first span {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .text-first h6 {
+        margin: 0;
+        font-size: 15px;
+      }
+      .main {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        position: relative;
+      }
+      .icons {
+        text-align: center;
+        background-color: white;
+        position: absolute;
+        border-radius: 50px;
+        top: 10px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      }
+  
+      .h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .image-small {
+    width: 80px;
+    position: absolute;
+    right: 280px;
+    top: -10px;
+}
+
+@media (min-width: 768px) {
+    .image-large {
+        width: 90px; /* adjust size for larger screens */
+        right: 230px; /* adjust position for larger screens */
+        top: -20; /* adjust position for larger screens */
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container text-center my-5">
+      <p class="h1">Customer Review</p>
+      <p>What Our Customers Have To Say About Us!</p>
+      <div class="row my-5 ms-5">
+        <div class="col-md-4 mb-5">
+          <div class="card-custom">
+            <div class="main">
+              <div class="icons">
+                <h3><b>4.9</b></h3>
+                <!-- <img
+                src="coma.webp"
+                alt="" style="width: 80px;position: absolute; right: 240px;top: -10px;"/> -->
+                <img src="coma.webp" alt="Coma Image" class="image-small image-large"/>
+              </div>
+            </div>
+            <!-- <img
+              src="coma.webp"
+              alt="" style="width: 100px;padding-right: 0px;"/> -->
+            <h2 class="my-3">The elegant design!</h2>
+            <p>
+              This one the best platform to get your site up and running in no
+              time!
+            </p>
+            <div class="second">
+              <img
+                class="imges"
+                src="icons.jpg"
+                alt="Image 1"
+              />
+              <div class="text-first">
+                <span><b>Afia Charan</b></span>
+                <h6>Frontend Developer</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card-custom">
+            <div class="main">
+              <div class="icons">
+                <h3><b>4.9</b></h3>
+                <img src="coma.webp" alt="Coma Image" class="image-small image-large"/>
+
+              </div>
+            </div>
+           
+            <h2>Top Class Service</h2>
+            <p>
+              This one the best platform to get your site up and running in no
+              time!
+            </p>
+            <div class="second">
+              <img
+                class="imges"
+                src="icons.jpg"
+                alt="Image 1"
+              />
+              <div class="text-first">
+                <span><b>Nisar Ahmed</b></span>
+              <h6 >Superintendent</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card-custom">
+            <div class="main">
+              <div class="icons">
+                <h3><b>4.9</b></h3>
+                <img src="coma.webp" alt="Coma Image" class="image-small image-large"/>
+
+              </div>
+            </div>
+           
+            <h2>One of the best</h2>
+            <p>
+              This one the best platform to get your site up and running in no
+              time!
+            </p>
+            <div class="second">
+              <img
+                class="imges"
+                src="icons.jpg"
+                alt="Image 1"
+              />
+              <div class="text-first">
+                <span><b>Abrar Hussain</b></span>
+                <h6>CEO/Founder</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>
